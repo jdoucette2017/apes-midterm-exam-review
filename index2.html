@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Midterm APES Review</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="midterm.css" rel="stylesheet">
+  </head>
+  <body>
+   	<nav id="NavBar" class="navbar navbar-default navbar-static-top container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">APES</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="#">Make Your Own Test</a></li>
+        <li><a href="index2.html">Practice Test</a></li>
+        <li><a href="#">Study</a></li>
+        <li><a href="http://schoology.greenwich.k12.ct.us/course/713873971/materials">Schoology</a></li>
+        <li><a href="http://hwsy16-17.greenwich.wikispaces.net/AP+Environmental+Science+HW+SY+2016+-+2017">Wiki Page</a></li>
+      </ul>
+    </div>
+    </nav>
+
+    <div id="CoverPage"class="container">
+    	<div class="row">
+    		<div class="col-md-2">
+    			<h3 id="QNText">Question</h3>
+    			<h4 id="QuestionNumber"></h4>
+    		</div>
+    		<div class="col-md-10">
+    			<h3 id="questionText"></h3>
+    			<form>
+    			<div class="radio">
+				  <label><input class="radioButton" type="radio" name="answer"><p id="choice1">Option 1</p></label>
+				</div>
+				<div class="radio">
+				  <label><input class="radioButton" type="radio" name="answer"><p id="choice2">Option 2</p></label>
+				</div>
+				<div class="radio">
+				  <label><input class="radioButton" type="radio" name="answer"><p id="choice3">Option 3</p></label>
+				</div>
+				<div class="radio">
+				  <label><input class="radioButton" type="radio" name="answer"><p id="choice4">Option 4</p></label>
+				</div>
+    			</form>
+    		</div>
+    	</div>
+
+    	<div class="row">
+    		<div class="col-md-2"></div>
+            <div class="col-md-4"></div>
+    		<div class="col-md-3">
+                <button id= "buttonClicked" type="button" class="btn btn-default" onclick="buttonClicked()">Next Question</button>
+            </div>
+    		<div class="col-md-4"></div>  
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCjMG9aABYIqZXuvHmMR9Z6qdNtjXD8V3M",
+        authDomain: "apes-midterm-exam-review.firebaseapp.com",
+        databaseURL: "https://apes-midterm-exam-review.firebaseio.com",
+        storageBucket: "apes-midterm-exam-review.appspot.com",
+        messagingSenderId: "283568785164"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="midterm.js"></script>
+  </body>
+</html>

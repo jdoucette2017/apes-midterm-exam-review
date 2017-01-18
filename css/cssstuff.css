@@ -1,0 +1,74 @@
+<style>
+div.chart_div{
+  float: center;
+}
+body {
+  background-color: #f2f2f2;
+}
+div.TitleSpace {
+  width: 100%;
+  background-color: #4d4dff;
+  border-color: gray;
+  border-bottom-style: solid;
+}
+
+nav.NavBarSpace {
+  width: 100%;
+  border-top-style: solid;
+  border-color: gray;
+  background-color: lightgray;
+}
+div.Amazon{
+  display:incline;
+  margin-top:2%;
+}
+h2.AmazonTitle {
+  float: left;
+  border-bottom:1px solid black;
+}
+
+img {
+  width: 70px;
+  height: 25px;
+}
+h2.Price{
+ float:right;
+ border-bottom: 1px solid black;
+}
+span.Green {
+  color: green;
+  font-size: 20px;
+}
+div.ChartSpace {
+  float: right;
+  width: 50%;
+}
+
+div.AmazonSummary {
+  float: left;
+  width: 50%;
+}
+
+table {
+  float: left;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+h1 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: white;
+}
+
+h2 {
+  color: black;
+  text-decoration: none;
+  margin-top: 5px;
+}
+</style>
